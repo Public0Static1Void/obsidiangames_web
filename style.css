@@ -28,8 +28,10 @@ body {
     will-change: transform, left;
 }
 .logo {
-    width: 320px;
+    width: 1280px;
+    opacity: 1;
     transition: all 0.6s ease;
+    transition: opacity 0.25s ease;
 }
 .hero h1 {
     font-family: 'Anton';
@@ -40,7 +42,7 @@ body {
 }
 /* Hero -> header */
 .hero.scrolled {
-    height: 70px;
+    height: 100px;
     background: #2e2e2e;
 }
 .hero.scrolled .hero-content {
@@ -49,7 +51,7 @@ body {
     gap: 15px;
 }
 .hero.scrolled .logo {
-    width: 45px;
+    width: 150px;
 }
 .hero.scrolled h1 {
     font-size: 28px;
@@ -60,9 +62,6 @@ body {
     height: 0;
     transition: height 0.6s ease;
     will-change: height;
-}
-.hero.scrolled + .hero-spacer {
-    height: calc(100vh - 70px);
 }
 
 
@@ -80,7 +79,7 @@ body {
 
 /* Game */
 .game-image {
-    background-image: url("images/obsidian_logo_red.png");
+    background-image: url("images/Runebound_title_png.png");
     background-size: cover;
     background-position: center;
     height: 80vh;
